@@ -6,22 +6,24 @@ This project demonstrates best practices in **form accessibility**, including la
 ## 🔹 Overview
 Forms are often the most critical part of any application. However, poorly designed forms create barriers for users with disabilities.  
 
-This signup form was built with accessibility in mind:
-- Works with screen readers.
-- Fully keyboard navigable.
-- Provides proper labels, landmarks, and required attributes.
+## 🔹 Accessibility Testing with Lighthouse
 
----
+To ensure the form meets accessibility standards, I tested it using **Lighthouse** in Chrome DevTools.  
 
-## 🔹 Features
-- **Semantic HTML5** structure.  
-- **Labels and Inputs** correctly linked (`for` + `id`).  
-- **Fieldsets + Legends** to group related form controls.  
-- **Required attributes** with `aria-required="true"` for screen readers.  
-- **Keyboard accessible** (Tab navigation).  
-- **Accessible links** with descriptive text.  
+### ✅ Steps to Run the Audit
+1. Open `signup.html` in **Google Chrome**.  
+2. Right-click → **Inspect** → Go to **Lighthouse** tab.  
+3. Select **Accessibility** category.  
+4. Click **Generate Report**.  
+5. Export the report as `lighthouse-report.html` and commit it to the repo.  
 
----
+### 📊 Expected Results
+- **Accessibility Score:** 90–100 (Green rating).  
+- **Checks Passed:**  
+  - All form controls have associated labels.  
+  - Required fields are announced to screen readers.  
+  - Links and buttons have sufficient contrast and descriptive text.  
+  - Page is fully keyboard-navigable.  
 
 ## 📂 Deliverables
 ### 1. `signup.html`
@@ -65,3 +67,4 @@ How to build accessible forms with label, fieldset, and legend.
 How to use ARIA (aria-required, aria-labelledby) responsibly.
 How to test forms with keyboard navigation and screen readers.
 How to validate accessibility with Lighthouse.
+
